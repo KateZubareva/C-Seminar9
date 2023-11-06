@@ -2,46 +2,48 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-int m = 1;
+// int m = 1;
 
-void Rec(int n, int m)
-{
-    if (m > n)
-    {
-        return;
-    }
-    else
-    {
-        Rec(n, m + 1);
-        Console.Write(m + " ");
-    }
-}
+// void Rec(int n, int m)
+// {
+//     if (m > n)
+//     {
+//         return;
+//     }
+//     else
+//     {
+//         Rec(n, m + 1);
+//         Console.Write(m + " ");
+//     }
+// }
 
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Rec(n, m);
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Rec(n, m);
 
 
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-
-// int Sum(int m, int n)
+// void Sum(int m, int n)
 // {
-//     int summa = m;
+//     Console.Write(SumMN(m - 1, n));
+// }
+// int SumMN(int m, int n)
+// {
 //     if (m == n)
 //         return 0;
 //     else
 //     {
 //         m++;
-//         summa = m + Sum(m, n);
-//         return summa;
+//         m = m + SumMN(m, n);
+//         return m;
 //     }
 // }
-// Console.Clear();
-// Console.Write("Введите число: "); 
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите число: "); 
+// Console.Write("Введите число M: ");
 // int m = Convert.ToInt32(Console.ReadLine());
-// Console.Write(Sum(m - 1, n));
+// Console.Write("Введите число N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Sum(m, n);
+
